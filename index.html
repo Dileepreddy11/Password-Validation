@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Password Validation</h1>
+    <label for="pswd">Enter Password: 
+        <input type="password" id="pwd" placeholder="Atleast 8 chars..." min="8" onkeyup="checkPassword()">
+    </label>
+    <center>
+    <div class="container">
+        <p class="invalid" id="length">Minimum 8 characters.</p>
+        <p class="invalid" id="lowercase">At least one lowercase.</p>
+        <p class="invalid" id="uppercase">At least one uppercase. </p>
+        <p class="invalid" id="number">At least one number.</p>
+<p class="invalid" id="specialcharacter">At least one special character.</p>
+    </div>
+</center>
+<script src="main.js"></script>
+</body>
+
+</html>
